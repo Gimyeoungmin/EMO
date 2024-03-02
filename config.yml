@@ -1,0 +1,99 @@
+# pip install openai moviepy gtts schedule
+
+import os
+import openai
+from gtts import gTTS
+from moviepy.editor import ImageSequenceClip, AudioFileClip
+import schedule
+import time
+
+# OpenAI API 키 설정
+openai.api_key = 'your_openai_api_key'
+
+# 텍스트 생성 함수
+def generate_text(prompt):
+    response = openai.Completion.create(engine="text-davinci-003", prompt=prompt, max_tokens=50)
+    return response.choices[0].text.strip()
+
+# 이미지 생성 함수 (여기에 실제 구현이 필요합니다)
+def generate_images(text_prompt, num_images=50):
+    images = []
+    for _ in range(num_images):
+        image = 'path/to/generated_image.png'  # 실제 생성된 이미지 경로를 사용해야 합니다.
+        images.append(image)
+    return images
+
+# 오디오 생성 함수
+def generate_audio(text_prompt, language='en', audio_file='generated_audio.mp3'):
+    tts = gTTS(text=text_prompt, lang=language, slow=False)
+    tts.save(audio_file)
+    return audio_file
+
+# 비디오 생성 함수
+def create_video(images, audio_file, output_file="output.mp4"):
+    clip = ImageSequenceClip(images, fps=1)  # 초당 프레임 수는 적절하게 조정해야 합니다.
+    audio_clip = AudioFileClip(audio_file)
+    final_clip = clip.set_audio(audio_clip)
+    final_clip.write_videofile(output_file, codec="libx264", audio_codec="aac")
+
+# 전체 프로세스를 자동화하는 메인 함수
+def automated_process(prompt):
+    # 텍스트 생성
+    text = generate_text(prompt)
+
+    # 이미지 생성 (이 부분은 실제 구현이 필요합니다)
+    images = generate_images(text)
+
+    # 오디오 생성
+    audio_file = generate_audio(text)
+
+    # 비디오 생성
+    create_video(images, audio_file)
+
+# 프로세스 실행
+prompt = "Describe a hyperrealistic scene of a cat surfing at the beach."
+
+# 매주 월요일 오전 10시에 프로세스 실행을 스케줄링
+schedule.every().monday.at("10:00").do(automated_process, prompt=prompt)
+
+while True:
+    schedule.run_pending()
+    time.sleep(60)  # 60초마다 실행 상태를 확인
+
+오픈나이를 수입하다
+수입품
+수입 요청
+from moviepy.editor ImageSequenceClip
+
+# 1단계: OpenAI API 키를 안전하게 설정합니다(ensure는 환경 변수로 설정됨)
+api_key = os.getenv("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 ")
+api_key가 아닌 경우:
+raise ValueError("OPENAI_API_KEY 환경 변수가 설정되지 않았습니다.")
+
+openai.api_key = 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
+
+# 2단계: 이미지 생성을 위한 텍스트 프롬프트 정의
+프롬프트 = ['하이퍼리얼리즘으로 해변에서 서핑하는 고양이', ' 하이퍼리얼리즘으로 산에서 스노우보드 타는 개']
+
+# 3단계: 다운로드한 이미지의 파일 경로를 저장할 목록 초기화
+image_paths =[]
+
+# 4단계: 프롬프트를 루프하여 이미지를 생성하고 로컬에 저장합니다
+i의 경우 numerate(prompts)에서 프롬프트 표시:
+응답 = openai.Image.create(프롬프트=prompt, n=1)
+image_url =응답['데이터'][0]['url']
+
+# 이미지 다운로드
+img_data = requests.get(image_url).content
+img_path = f'image_{i}.png'
+open(img_path, 'wb')을 핸들러로 사용:
+handler.write(img_data)
+
+image_paths.append(img_path)
+
+# 5단계: 이미지가 다운로드되었는지 확인하고 비디오로 컴파일합니다
+image_paths 경우:
+clip = ImageSequenceClip (image_paths, fps=50) # 필요에 따라 'fps' 조정
+clip.write_videofile (" output.mp4")
+기타:
+인쇄 ("images가 다운로드 되고, 비디오를 만들 수 있습니다.")
