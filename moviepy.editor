@@ -1,0 +1,25 @@
+pip install moviepyfrom moviepy.editor import ImageSequenceClip
+import os
+
+def create_video_from_images(image_folder, output_video_path, fps=24):
+    # Ensure the image_folder path is absolute
+    image_folder = os.path.abspath(image_folder)
+
+    # Get the list of all image files in the specified directory and sort them
+    image_files = sorted([img for img in os.listdir(image_folder) if img.endswith((".png", ".jpg", ".jpeg", ".webp"))])
+
+    # Construct the full file path for each image file
+    image_filepaths = [os.path.join(image_folder, img) for img in image_files]
+
+    # Create a moviepy ImageSequenceClip
+    clip = ImageSequenceClip(image_filepaths, fps=fps)
+
+    # Write the video file to the specified path
+    clip.write_videofile(output_video_path, fps=fps)
+
+# Specify the folder containing your images and the output video file path
+image_folder_path = 'path/to/your/image/folder'  # Update this path
+output_video_file_path = 'path/to/your/output/video.mp4'  # Update this path
+
+# Call the function to create the video
+create_video_from_images(image_folder_path, output_video_file_path)
