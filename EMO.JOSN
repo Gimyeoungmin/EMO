@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>
+            
+            Validation Results - W3C Markup Validator</title>
+        <link rel="icon" href="data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%10%00%00%00%10%08%02%00%00%00%90%91h6%00%00%00%19IDAT(%91c%BCd%AB%C2%40%0A%60%22I%F5%A8%86Q%0DCJ%03%00%DE%B5%01S%07%88%8FG%00%00%00%00IEND%AEB%60%82" type="image/png" />
+    <link rev="made" href="mailto:www-validator@w3.org" />
+    <link rev="start" href="./" title="Home Page" />
+    <link rel="stylesheet" href="./style/base" type="text/css" media="all" />
+    <link rel="stylesheet" href="./style/results" type="text/css" media="all" />
+    <meta name="keywords" content="HTML, HyperText Markup Language, Validation,
+      W3C Markup Validation Service" />
+    <meta name="description" content="W3C's easy-to-use
+      markup validation service, based on SGML and XML parsers." />
+  </head>
+  <body>
+    
+    <div id="banner">
+     <h1 id="title">
+       <a href="http://www.w3.org/"><img alt="W3C" width="110" height="61" id="logo" src="./images/w3c.png" /></a>
+ 			<a href="./"><span>Markup Validation Service</span></a>
+       </h1>
+       <p id="tagline">Check the markup (HTML, XHTML, …) of Web documents</p>
+    </div>
+
+
+<div id="results_container">
+
+
+
+        <ul class="navbar" id="jumpbar">
+                <li><strong>Jump To:</strong></li>
+                
+                
+          
+
+                  <li><a href="#fatal-errors">Error(s) blocking validation</a></li>
+
+  
+          <li><a title="Listing of Source Input" href="#source">Source Listing</a></li>
+  
+  
+  
+        </ul>
+
+
+      
+  
+  <h2 id="results" class="invalid">Sorry! This document cannot be checked.</h2>
+    
+  
+
+
+
+
+      
+      
+
+<ol id="fatal-errors">
+
+
+
+
+
+
+
+
+<li class="msg_err"><span class="err_type"><img src="images/info_icons/error.png" alt="Error" title="Error" /></span>
+      <p>
+        Sorry, this type of
+        <a href="http://www.w3.org/Addressing/">URL</a>
+        <a href="http://www.iana.org/assignments/uri-schemes.html">scheme</a>
+        (<q>undefined</q>) is not
+        supported by this service. Please check that you entered the URL correctly.
+      </p>
+      <p>URLs should be in the form: <code>https://validator.w3.org/</code></p>
+      <p>
+        If you entered a valid URL using a scheme that we should support,
+        please let us know as outlined on our
+        <a href="feedback.html">Feedback page</a>. Make sure to include the
+        specific URL you would like us to support, and if possible provide a
+        reference to the relevant standards document describing the URL scheme
+        in question.
+      </p>
+      <p class="tip">
+        Remember that you can always save the page to disk and Validate it
+        using the <a href="./#validate-by-upload">File Upload interface</a>.
+      </p>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ol>
+
+</div><!-- results_container-->
+
+  <ul class="navbar" id="menu">
+    <li><a href="/" accesskey="1" title="Go to the Home Page for The W3C Markup Validation Service">Home</a><span> | </span></li>
+    <li><a href="/about.html" title="Information About this Service">About...</a><span> | </span></li>
+
+    <li><a href="/whatsnew.html" title="The changes made to this service recently">News</a><span> | </span></li>
+    <li><a href="/docs/" accesskey="3" title="Documentation for this Service">Docs</a><span> | </span></li>
+    <li><a href="/docs/help.html" title="Help and answers to frequently asked questions">Help&nbsp;&amp;&nbsp;<abbr title="Frequently Asked Questions">FAQ</abbr></a><span> | </span></li>
+    <li><a href="/feedback.html" accesskey="4" title="How to provide feedback on this service">Feedback</a><span> | </span></li>
+    <li><a href="/contribute.html" title="How to contribute to the validator project">Contribute</a><span> | </span></li>
+  </ul>
+  <div id="footer">
+
+    <p id="activity_logos">
+    <a href="https://www.w3.org/Status" title="W3C's Open Source, bringing you free Web quality tools and more"><img src="https://www.w3.org/assets/logos/w3c/w3c-no-bars.svg" alt="W3C" width="72" height="47"><img src="/images/opensource-55x48.png" alt="Open-Source" title="We are building certified Open Source/Free Software. - see www.opensource.org" width="55" height="48"></a>
+    </p>
+
+    <p id="support_logo">
+    <a href="https://www.w3.org/donate/">
+      <img src="https://www.w3.org/QA/Tools/I_heart_validator" alt="I heart Validator logo" title="Donate to W3C" width="80" height="15">
+    </a>
+    </p>
+
+    <p class="copyright"><span lang="en" dir="ltr">Copyright © 2024 <a href="https://www.w3.org/">World Wide Web Consortium</a>. <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup> <a href="https://www.w3.org/policies/#disclaimers">liability</a>, <a href="https://www.w3.org/policies/#trademarks">trademark</a> and <a rel="license" href="https://www.w3.org/copyright/document-license/" title="W3C Document License">permissive license</a> rules apply.</span></p>
+  </div><!-- footer -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"85fa9a9e79c63086","version":"2024.2.4","token":"fc3883dff5a945e6add18f15eb2c3b97"}' crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
